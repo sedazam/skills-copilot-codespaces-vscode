@@ -1,0 +1,30 @@
+// Write a program that calculates the area of a circle given its radius.
+// 	•	The input is a string (e.g. "7").
+// 	•	Use parseFloat() to convert it.
+// 	•	Use the formula:
+// Area = π × radius²
+// (In JavaScript, use Math.PI and Math.pow() or radius * radius)
+// 	•	Print the result in this format:
+
+// Area is 153.93804002589985
+
+
+let radiusInput = "7"; // Example input
+let radius = parseFloat(radiusInput); // Convert input to a number
+let area = Math.PI * Math.pow(radius, 2); // Calculate area using the formula
+console.log(`Area is ${area}`); // Print the result in the specified format
+
+let input2 = "7"; // Example input
+let radius2 = parseFloat(input2); // Convert input to a number
+let area2 = Math.PI * radius2 * radius2; // Calculate area using the formula
+console.log(`Area is ${area2}`); // Print the result in the specified format
+
+
+
+// Write a program that takes a string input and prints the string in reverse order.
+// 	•	The input is a string, e.g. "hello".
+// 	•	The program should output "olleh".
+
+let input = "hello"; // Example input
+let reversed = input.split('').reverse().join(''); // Reverse the string
+console.log(reversed); // Print the reversed string
