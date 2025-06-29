@@ -1,3 +1,7 @@
+// This file contains my completed JavaScript challenges.
+
+
+
 // Write a program that calculates the area of a circle given its radius.
 // 	•	The input is a string (e.g. "7").
 // 	•	Use parseFloat() to convert it.
