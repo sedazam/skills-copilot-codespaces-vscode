@@ -28,3 +28,138 @@ console.log(`Area is ${area2}`); // Print the result in the specified format
 let input = "hello"; // Example input
 let reversed = input.split('').reverse().join(''); // Reverse the string
 console.log(reversed); // Print the reversed string
+
+
+// Write a program that gets an input from the user, a number, 1 or 0. (given)
+
+// The program will output "T" if the input is 1 and "F" otherwise.
+let num = parseInt(inp);
+if (num === 1) {
+    console.log("T");
+} else {
+    console.log("F");
+}
+
+
+// Write a program that gets an input from the user, a number (0, 1, or 2).
+// 	•	If the input is 0, print "No".
+// 	•	If the input is 1, print "Maybe".
+// 	•	If the input is 2, print "Yes".
+// 	•	For any other input, print "Invalid input".
+
+let num = parseInt(inp);
+if (num === 0) {
+    console.log("No");
+}
+else if (num === 1) {
+    console.log("Maybe");
+}
+else if (num === 2) {
+    console.log("Yes");
+}
+else {
+    console.log("Invalid input");
+} 
+
+// Write a program that takes an input number (given as a string), converts it to a number, and checks:
+// 	•	If the number is divisible by 3, print "Fizz".
+// 	•	If the number is divisible by 5, print "Buzz".
+// 	•	If the number is divisible by both 3 and 5, print "FizzBuzz".
+// 	•	Otherwise, print the number itself.
+
+let input = "15"; // Example input
+let num = parseInt(input); // Convert input to a number
+if (num % 3 === 0 && num % 5 === 0) {
+    console.log("FizzBuzz");
+}
+else if (num % 3 === 0) {
+    console.log("Fizz");
+}
+else if (num % 5 === 0) {
+    console.log("Buzz");
+}
+else {
+    console.log(num);
+}
+
+
+// Write a program that takes a year as input (string), converts it to a number, and prints:
+// 	•	"Leap year" if the year is a leap year.
+// 	•	"Not a leap year" otherwise.
+
+// ⸻
+
+// Rules for leap years:
+// 	•	A year is a leap year if it is divisible by 4 and not divisible by 100,
+// OR it is divisible by 400.
+
+
+let year = parseInt(inp);
+if ((year % 4 ===0 && year % 100 !== 0) || (year % 400 === 0)) {
+    console.log("Leap year");
+}
+else {
+    console.log("Not a leap year");
+}
+
+🔹 Question: Days in February
+
+// Write a program that takes a year as input (string), converts it to a number, and prints how many days February has in that year.
+// 	•	If it’s a leap year, print: "February has 29 days"
+// 	•	Otherwise, print: "February has 28 days"
+
+// ⸻
+
+// Example:
+// 	•	Input: "2020" → Output: "February has 29 days"
+// 	•	Input: "2019" → Output: "February has 28 days"
+
+
+let year = parseInt(inp);
+if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+    console.log("February has 29 days");
+}
+else {
+    console.log("February has 28 days");
+}
+
+
+// 🔹 Question: Grade Calculator
+
+// Write a program that takes a score (string input), converts it to a number, and prints the grade based on this scale:
+// Score
+// Grade
+// 90 and above
+// A
+// 80 to 89
+// B
+// 70 to 79
+// C
+// 60 to 69
+// D
+// Below 60
+// F
+
+// Example:
+
+// Input: "85" → Output: "B"
+// Input: "59" → Output: "F"
+
+
+
+let score = parseInt(inp);
+if (score >= 90 && score <= 100) {
+    console.log("A");
+}
+else if (score >= 80 && score < 90) {
+    console.log("B");
+}
+else if (score >= 70 && score < 80) {
+    console.log("C");
+}
+else if (score >= 60 && score < 70) {
+    console.log("D");
+}
+else {
+    console.log("F");
+} 
